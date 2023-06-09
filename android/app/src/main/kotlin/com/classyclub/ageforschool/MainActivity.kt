@@ -1,4 +1,4 @@
-package com.example.age_calculate
+package com.classyclub.ageforschool
 
 import io.flutter.embedding.android.FlutterActivity
 
