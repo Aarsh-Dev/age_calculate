@@ -566,11 +566,6 @@ class _HomeState extends State<Home> {
           const Text("RTE STD / आर. टी. इ कक्षा:", style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.w500),),
           const SizedBox(width: 10.0,),
-          standard == "બાલવાટિકા" || standard == "બાલમંદિર (નર્સરી/સી.કે.જી)" ||
-              standard == "બાલમંદિર (નર્સરી/જુ.કે.જી)"
-              ? const Text("-",
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),)
-              :
           Text(rteStd.toString(), style: const TextStyle(
               color: Colors.black, fontWeight: FontWeight.w500),),
         ],
@@ -583,71 +578,6 @@ class _HomeState extends State<Home> {
         padding: EdgeInsets.symmetric(vertical: 5.0),
         child: Text(title!, style: TextStyle(
             color: Colors.white, fontSize: 14, fontWeight: FontWeight.w600),));
-  }
-
-  rigthDayMonthYear() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Expanded(
-          child: Container(
-            height: 50,
-            decoration: BoxDecoration(
-                color: Color(0xff6470de),
-                borderRadius: BorderRadius.circular(5.0)
-            ),
-            child: Center(
-              child: yourAgeList.isNotEmpty ? Text(yourAgeList[2].toUpperCase(),
-                  style: TextStyle(color: Colors.white,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 14)) : Text("Days:0", style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
-                  fontSize: 14)),
-            ),
-          ),
-        ),
-        SizedBox(
-          width: 10.0,
-        ),
-        Expanded(
-          child: Container(
-            height: 50,
-            decoration: BoxDecoration(
-                color: Color(0xffcfd499),
-                borderRadius: BorderRadius.circular(5.0)
-            ),
-            child: Center(
-              child: yourAgeList.isNotEmpty ? Text(yourAgeList[1].toUpperCase(),
-                  style: TextStyle(color: Colors.white,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 14)) : Text("Months:0".toUpperCase(),
-                  style: TextStyle(color: Colors.white,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 14)),
-            ),
-          ),
-        ),
-        SizedBox(
-          width: 10.0,
-        ),
-        Expanded(
-          child: Container(
-            height: 50,
-            decoration: BoxDecoration(
-                color: Color(0xff72e2b3),
-                borderRadius: BorderRadius.circular(5.0)
-            ),
-            child: Center(
-              child: Text(calculateAge.toString(),
-                  style: TextStyle(color: Colors.white,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 14)),
-            ),
-          ),
-        ),
-      ],
-    );
   }
 
   dateFormat(String date) {
