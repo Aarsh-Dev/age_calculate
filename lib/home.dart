@@ -34,7 +34,8 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff6470de),
+        // backgroundColor: Color(0xff6470de),
+        backgroundColor: Colors.teal,
         centerTitle: true,
         title: Text("Age Of School",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),),
@@ -48,7 +49,7 @@ class _HomeState extends State<Home> {
             // const Center(
             //   child: Text("2023-24 / २०२३-२४",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500,fontSize: 16),),
             // ),
-            const SizedBox(
+             SizedBox(
               height: 16.0,
             ),
             Container(
@@ -58,7 +59,8 @@ class _HomeState extends State<Home> {
                   .width,
               padding: EdgeInsets.all(10.0),
               decoration: BoxDecoration(
-                color: Color(0xff6470de),
+                // color: Color(0xff6470de),
+              color: Colors.teal,
                 borderRadius: BorderRadius.circular(10.0),
               ),
               child: Column(
@@ -238,7 +240,8 @@ class _HomeState extends State<Home> {
               setState(() {});
             },
             style: TextButton.styleFrom(
-                backgroundColor: Color(0xffbb7ef9),
+                // backgroundColor: Color(0xffbb7ef9),
+              backgroundColor: Colors.blue,
                 fixedSize: Size(MediaQuery
                     .of(context)
                     .size
@@ -358,7 +361,6 @@ class _HomeState extends State<Home> {
       standard = "-";
       rteStd = "8";
     }else{
-      calculateAge = 0;
       standard = "-";
       rteStd = "-";
     }
