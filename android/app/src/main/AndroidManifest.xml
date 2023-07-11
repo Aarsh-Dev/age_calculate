@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.classyclub.ageforschool">
+    package="com.hardikraval.ageforschool">
    <application
         android:label="Age Of School"
         android:name="${applicationName}"

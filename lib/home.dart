@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:nb_utils/nb_utils.dart';
 
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -258,6 +259,8 @@ class _HomeState extends State<Home> {
     );
   }
 
+
+
   showDate() async {
     DateTime? pickedDate = await showDatePicker(
         context: context,
@@ -381,6 +384,7 @@ class _HomeState extends State<Home> {
     if (today.month > birthDate.month) {
       monthDiff = today.month - birthDate.month;
     }
+
 
     dayDiff = today.month - birthDate.day;
     debugPrint("dayDiff:=>$dayDiff");
@@ -590,4 +594,7 @@ class _HomeState extends State<Home> {
     return brazilianDate;
   }
 }
+
+
+
 
