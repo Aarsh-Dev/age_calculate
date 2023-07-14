@@ -277,6 +277,7 @@ class _HomeState extends State<Home> {
     }
   }
 
+
   findAge(DateTime birthDate) {
     DateTime currentDate = DateTime.now();
     String currentMonth = DateFormat('MM/yyyy').format(currentDate);
