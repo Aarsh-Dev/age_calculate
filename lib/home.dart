@@ -14,6 +14,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   TextEditingController birthDayController = TextEditingController();
   int calculateAge = 0;
+
   int std = 0;
   String standard = "-";
   String rteStd = "-";
